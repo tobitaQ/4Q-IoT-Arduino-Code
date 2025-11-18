@@ -1,15 +1,17 @@
+const int LED = 13;
+
 void setup() {
   // put your setup code here, to run once:
-  pinMode(13, OUTPUT);
+  pinMode(LED, OUTPUT);
   Serial.begin(115200);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(13, HIGH);
+  digitalWrite(LED, HIGH);
   Serial.println("HIGH");
   delay(2000);
-  digitalWrite(13, LOW);
+  digitalWrite(LED, LOW);
   Serial.println("LOW");
   delay(2000);
 }

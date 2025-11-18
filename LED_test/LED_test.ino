@@ -4,11 +4,9 @@ void setup() {
   Serial.begin(115200);
 }
 
-
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(13, HIGH);
-  Serial.println("Hello World!!");
   delay(2000);
   digitalWrite(13, LOW);
   delay(2000);
